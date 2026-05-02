@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <OutputType>Library</OutputType>
+    <Version>6.9.0.1</Version>
+    <AssemblyName>Twilio.Voice.Android</AssemblyName>
+    <PackageId>Twilio.Voice.Android</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Additions\AboutAdditions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.2.0.1" PrivateAssets="all" />
+    <PackageReference Include="Xamarin.ReLinker" Version="1.4.4" />
+
+    <AndroidMavenLibrary Include="com.getkeepsafe.relinker:relinker" Version="1.4.4" Bind="false" Pack="false" />
+    <AndroidMavenLibrary Include="com.twilio:voice-android" Version="6.9.0" />
+
+    <AndroidNamespaceReplacement Include="com.twilio.voice" Replacement="TwilioVoice" />
+  </ItemGroup>
+</Project>

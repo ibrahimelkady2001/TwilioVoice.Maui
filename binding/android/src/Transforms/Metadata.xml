@@ -1,0 +1,14 @@
+﻿<metadata>
+
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='InternalCall']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='InternalCall']/method[@name='getState' and count(parameter)=0]" name="propertyName"></attr>
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='InternalCall']/method[@name='getState' and count(parameter)=0]" name="managedName">GetState</attr>
+
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='LogParameters.Builder']/method[@name='file' and count(parameter)=1]" name="managedName">DoFile</attr>
+
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='OpusCodec']/field[@name='NAME']" name="managedName">CodecName</attr>
+
+  <attr path="/api/package[@name='com.twilio.voice']/class[@name='PcmuCodec']/field[@name='NAME']" name="managedName">CodecName</attr>
+
+  <attr path="/api/package[@name='com.twilio.voice']/interface[@name='UnregistrationListener']/method[@name='onError']" name="argsType">UnregistrationErrorEventArgs</attr>
+</metadata>

@@ -12,9 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
-    <ProjectReference Include="..\..\..\untitled folder 243\Chat_App_Local_Repo\TwilioVoiceDotnetIos\src\Twilio.Voice.iOS.csproj" SetTargetFramework="TargetFramework=net10.0-ios" />
+    <ProjectReference Include="..\binding\ios\src\Twilio.Voice.iOS.csproj" SetTargetFramework="TargetFramework=net10.0-ios" />
   </ItemGroup>
   <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-    <ProjectReference Include="..\..\..\untitled folder 243\Chat_App_Local_Repo\TwilioVoiceDotnetAndroid\src\Twilio.Voice.Android.csproj" />
+    <ProjectReference Include="..\binding\android\src\Twilio.Voice.Android.csproj" />
   </ItemGroup>
 </Project>

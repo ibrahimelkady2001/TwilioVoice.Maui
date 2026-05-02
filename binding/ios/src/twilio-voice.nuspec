@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Twilio.Voice.iOS.Binding</id>
+    <version>6.3.0.0</version>
+    <authors>twilio</authors>
+    <owners>twilio</owners>
+    <projectUrl>https://github.com/sang-hyeon/TwilioVoiceXamarinIOS-net7</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <title>Twilio Voice iOS SDK (.NET)</title>
+    <summary>Twilio Voice iOS SDK binding for .NET iOS</summary>
+    <description>With Twilio, you can quickly make and receive voice calls in your application.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2024</copyright>
+    <tags>twilio dotnet ios maui</tags>
+    <dependencies>
+      <group targetFramework="net10.0-ios">
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+      <file src="bin/Release/net10.0-ios/Twilio.Voice.iOS.dll" target="lib/net10.0-ios/Twilio.Voice.iOS.dll" />
+      <file src="Twilio.Voice.XamarinBinding.targets" target="build/Twilio.Voice.XamarinBinding.targets" />
+  </files>
+</package>
